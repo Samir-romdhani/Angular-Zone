@@ -11,12 +11,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 				<button class='btn btn-info btn-sm m-l-1em' (click)="previousPage()" [disabled]="page == 1"><i class="fa fa-angle-left"></i></button>
 				<span style="margin-left: 10px;margin-right: 10px;">Page {{page}}/{{pagesNumber}}</span> 
 				<span>  </span>
-        <!--
         <span style="margin-left: 10px;margin-right: 10px;">Size</span>
 				<select class="form-control form-control-sm pageSizeSelectBox" id="currentSize" name="currentSize" [(ngModel)]="currentSize" (change)="changeSize()">
 					<option *ngFor="let size of sizes" value="{{size}}">{{size}}</option>
         </select>
-        -->
 				<button class='btn btn-info btn-sm m-l-1em' (click)="nextPage()" [disabled]="page === pagesNumber"><i class="fa fa-angle-right"></i></button>
 				<button class='btn btn-info btn-sm m-l-1em' (click)="lastPage()" [disabled]="page === pagesNumber"><i class="fa fa-angle-double-right"></i></button>
 			</div>

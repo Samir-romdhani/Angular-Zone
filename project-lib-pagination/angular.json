@@ -23,10 +23,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/tether/dist/css/tether.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "node_modules/c3/c3.min.css"
             ],
             "scripts": [
-              ],
+              "node_modules/tether/dist/js/tether.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -164,6 +172,41 @@
             "tsConfig": [
               "projects/rs-pagination-lib/tsconfig.lib.json",
               "projects/rs-pagination-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "rs-charts-c3-lib": {
+      "root": "projects/rs-charts-c3-lib",
+      "sourceRoot": "projects/rs-charts-c3-lib/src",
+      "projectType": "library",
+      "prefix": "rs",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/rs-charts-c3-lib/tsconfig.lib.json",
+            "project": "projects/rs-charts-c3-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/rs-charts-c3-lib/src/test.ts",
+            "tsConfig": "projects/rs-charts-c3-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/rs-charts-c3-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/rs-charts-c3-lib/tsconfig.lib.json",
+              "projects/rs-charts-c3-lib/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

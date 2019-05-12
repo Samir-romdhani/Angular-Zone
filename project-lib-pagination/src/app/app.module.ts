@@ -5,6 +5,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
 import { RsPaginationLibModule } from 'projects/rs-pagination-lib/src/public-api';
+import { RsChartsC3LibModule } from 'projects/rs-charts-c3-lib/src/public_api';
 
 export const ROUTES : Routes = [
 
@@ -30,7 +31,8 @@ export const ROUTES : Routes = [
      // { enableTracing: true },
     ),
     HttpClientModule,
-    RsPaginationLibModule
+    RsPaginationLibModule,
+    RsChartsC3LibModule
   ],
   providers: [],
   bootstrap: [AppComponent]

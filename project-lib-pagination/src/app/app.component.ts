@@ -37,15 +37,15 @@ ngOnInit(): void {
 
   this.activatedRoute.queryParams
   .subscribe(params => {
-              this.rsPaginationService.searchForMovieByObservable(
-                "james", params['page']
+              this.rsPaginationService.searchForMovieByObservable2(
+                params['page'], params['size']
               )
           .subscribe(
           res => {
-                this.list = res.results;
+                this.list = res.data;
                 this.page = res.page;
                 this.pagesNumber = res.total_pages;
-                this.size = res.total_results / res.total_pages;
+                this.size = res.per_page;
                   },
           error => {
           });
