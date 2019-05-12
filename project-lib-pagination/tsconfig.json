@@ -24,6 +24,12 @@
       ],
       "rs-pagination-lib/*": [
         "dist/rs-pagination-lib/*"
+      ],
+      "rs-charts-c3-lib": [
+        "dist/rs-charts-c3-lib"
+      ],
+      "rs-charts-c3-lib/*": [
+        "dist/rs-charts-c3-lib/*"
       ]
     }
   }

@@ -191,6 +191,11 @@
           "options": {
             "tsConfig": "projects/rs-charts-c3-lib/tsconfig.lib.json",
             "project": "projects/rs-charts-c3-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/rs-charts-c3-lib/ng-package.json"
+            }
           }
         },
         "test": {

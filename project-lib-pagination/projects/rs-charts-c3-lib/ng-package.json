@@ -1,0 +1,7 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/rs-charts-c3-lib",
+  "lib": {
+    "entryFile": "src/public_api.ts"
+  }
+}
