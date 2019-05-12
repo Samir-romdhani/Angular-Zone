@@ -1,27 +1,49 @@
 # ProjectLibPagination
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Project Lib Demo Application
+========================
 
-## Code scaffolding
+Requirements
+------------
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  * ng-packagr: v ^3.0.0
+  * @angular-devkit/build-ng-packagr: v ~0.7.0
+  * and the [Angular CLI](https://github.com/angular/angular-cli) version 6.
 
-## Build
+Installation
+------------
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Install the [Symfony client][4] binary and run this command:
 
-## Running unit tests
+```bash
+$ cd project-lib-demo
+$ ng generate library rs-autocomplete-ng6-lib --prefix=rs
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+You can enrichir the lib. Then generate the lib
 
-## Running end-to-end tests
+```bash
+$ cd project-lib-demo
+$ ng build --prod rs-autocomplete-ng6-lib
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Test en local, Then
 
-## Further help
+```bash
+$ cd dist/rs-autocomplete-ng6-lib
+$ npm adduser 
+$ update version , readMe ...
+$ npm publish
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+Usage
+-----
+TODO
+
+
+[1]: https://medium.com/@adelma/librairie-angular-bebb194091d8
+[2]: https://formationjavascript.com/creer-publier-module-angular-2
