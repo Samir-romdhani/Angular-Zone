@@ -1,0 +1,19 @@
+{
+  "name": "@cell4rom/front-line",
+  "version": "0.2.4",
+  "description": "Module Pagination for Angular.",
+  "keywords": [
+    "angular 6"
+  ],
+  "author": "Samir Romdhani",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Samir-romdhani/Angular-Zone.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "^6.0.0",
+    "@angular/core": "^6.0.0",
+    "rxjs": "^~6.0.0"
+  }
+}
