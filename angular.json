@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "project-lib-pagination": {
+    "cell4rom-libn": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/project-lib-pagination",
+            "outputPath": "dist/cell4rom-libn",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "project-lib-pagination:build"
+            "browserTarget": "cell4rom-libn:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "project-lib-pagination:build:production"
+              "browserTarget": "cell4rom-libn:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "project-lib-pagination:build"
+            "browserTarget": "cell4rom-libn:build"
           }
         },
         "test": {
@@ -112,7 +112,7 @@
         }
       }
     },
-    "project-lib-pagination-e2e": {
+    "cell4rom-libn-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -121,11 +121,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "project-lib-pagination:serve"
+            "devServerTarget": "cell4rom-libn:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "project-lib-pagination:serve:production"
+              "devServerTarget": "cell4rom-libn:serve:production"
             }
           }
         },
@@ -221,5 +221,5 @@
       }
     }
   },
-  "defaultProject": "project-lib-pagination"
+  "defaultProject": "cell4rom-libn"
 }

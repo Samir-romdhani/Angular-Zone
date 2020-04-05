@@ -11,11 +11,11 @@ export class AppComponent implements OnInit {
 
   public list: any[]; 
 
-  public page: any;
+  public page: number;
 
   public pagesNumber: number;
 
-  public size: any;
+  public size: number;
   
   constructor(private rsPaginationService : RsPaginationService,
     private activatedRoute: ActivatedRoute,

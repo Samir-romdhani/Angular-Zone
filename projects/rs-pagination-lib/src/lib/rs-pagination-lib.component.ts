@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'rs-pagination-lib',
+  selector: 'rs-pagination',
   template: `
   <div *ngIf="pagesNumber >= 1">
 	<div class="row">
