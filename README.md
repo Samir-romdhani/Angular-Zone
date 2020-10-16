@@ -47,3 +47,11 @@ TODO
 
 [1]: https://medium.com/@adelma/librairie-angular-bebb194091d8
 [2]: https://formationjavascript.com/creer-publier-module-angular-2
+
+
+
+Github package Integration
+
+//npm.pkg.github.com/:_authToken=xxxx
+//registry.npmjs.org/:_authToken=xxxx
+@cell4rom:registry=https://registry.npmjs.org   // Work only in npmjs
