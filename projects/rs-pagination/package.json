@@ -1,6 +1,6 @@
 {
   "name": "@cell4rom/rs-pagination",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Native Pagination",
   "keywords": [
     "angular 6"
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Samir-romdhani/Angular-Zone.git"
+    "url": "https://github.com/cell4rom/rs-pagination.git"
+  },
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com"
   },
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",

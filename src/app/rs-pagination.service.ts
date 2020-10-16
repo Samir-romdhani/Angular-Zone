@@ -25,11 +25,20 @@ export class RsPaginationService {
       }).toPromise();
     }
 
-    searchForMovieByObservable2(per_page: string){
+    searchForMovieByObservable1(per_page: string){
       //If no page is provided default the first will be taken
       return this.httpClient.get<any>(searchQuery2+this.restUri, {
         params: {
-          //page: page,
+          per_page: per_page
+        }
+      });
+    }
+
+    searchForMovieByObservable2(page: string, per_page: string){
+      //If no page is provided default the first will be taken
+      return this.httpClient.get<any>(searchQuery2+this.restUri, {
+        params: {
+          page: page,
           per_page: per_page
         }
       });

@@ -219,46 +219,6 @@
           }
         }
       }
-    },
-    "rs-pagination": {
-      "root": "projects/rs-pagination",
-      "sourceRoot": "projects/rs-pagination/src",
-      "projectType": "library",
-      "prefix": "rs",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/rs-pagination/tsconfig.lib.json",
-            "project": "projects/rs-pagination/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "project": "projects/rs-pagination/ng-package.json"
-            }
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/rs-pagination/src/test.ts",
-            "tsConfig": "projects/rs-pagination/tsconfig.spec.json",
-            "karmaConfig": "projects/rs-pagination/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/rs-pagination/tsconfig.lib.json",
-              "projects/rs-pagination/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
     }
   },
   "defaultProject": "cell4rom-lib"

@@ -9,14 +9,15 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
 
-  public list: any[]; 
-  pageOfItems: Array<any>;
-
+  public list_api: any[]; 
+  
   public page: number;
-
   public pagesNumber: number;
+  public size_api: number;
 
-  public size: number;
+  public list: any[]; 
+  public pageOfItems: Array<any>;
+  public size: number = 5;
   
   constructor(private rsPaginationService : RsPaginationService,
     private activatedRoute: ActivatedRoute,
@@ -26,38 +27,32 @@ export class AppComponent implements OnInit {
 
 onChangePage(pageOfItems: Array<any>) {
   this.pageOfItems = pageOfItems;
-  
 }
 
 ngOnInit(): void {
-  this.size = 5;
-  /*
-  this.rsPaginationService.searchForMovie("james", 1)
-  .then(res => {
-    console.log("list : "+JSON.stringify(res))
-    this.list = res.results;
-    this.page = res.page;
-    this.pagesNumber = res.page;
-    this.size = 20;
-  })
-  */
-
+  this.rsPaginationService.searchForMovieByObservable1("30")
+  .subscribe(
+  res => {
+        this.list = res.data;
+          },
+  error => {
+  });
+  
   this.activatedRoute.queryParams
   .subscribe(params => {
               this.rsPaginationService.searchForMovieByObservable2(
-                /*params['page'], params['size']*/
-                "30"
+                params['page'], params['size']
               )
-          .subscribe(
-          res => {
-                this.list = res.data;
-                // this.page = res.page;
-                // this.pagesNumber = res.total_pages;
-                // this.size = res.per_page;
-                  },
-          error => {
-          });
-});
+              .subscribe(
+              res => {
+                    this.list_api = res.data;
+                    this.page = res.page;
+                    this.pagesNumber = res.total_pages;
+                    this.size_api = res.per_page;
+                      },
+              error => {
+              });
+   });
 }
 
 }

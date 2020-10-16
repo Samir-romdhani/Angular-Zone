@@ -1,6 +1,6 @@
 {
   "name": "@cell4rom/front-line",
-  "version": "0.2.4",
+  "version": "1.2.4",
   "description": "Module Pagination for Angular.",
   "keywords": [
     "angular 6"
@@ -13,7 +13,6 @@
   },
   "peerDependencies": {
     "@angular/common": "^6.0.0",
-    "@angular/core": "^6.0.0",
-    "rxjs": "^~6.0.0"
+    "@angular/core": "^6.0.0"
   }
 }

@@ -1,12 +1,17 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
+/**
+ * #### Pagination within API RSET
+ * 
+ * Author : romdhanisamir94@gmail.com
+ */
 @Component({
-  selector: 'rs-pagination',
+  selector: 'rs-pagination-api',
   template: `
   <div *ngIf="pagesNumber >= 1">
 	<div class="row">
-			<div class="col-md-5">
+			<div class="col-md-12">
 				<button class='btn btn-info btn-sm m-l-1em' (click)="firstPage()" [disabled]="page === 1"><i class="fa fa-angle-double-left"></i></button>
 				<button class='btn btn-info btn-sm m-l-1em' (click)="previousPage()" [disabled]="page == 1"><i class="fa fa-angle-left"></i></button>
 				<span style="margin-left: 10px;margin-right: 10px;">Page {{page}}/{{pagesNumber}}</span> 

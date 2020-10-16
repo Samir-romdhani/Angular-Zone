@@ -4,13 +4,10 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
-//import { RsPaginationModule } from 'projects/rs-pagination-lib/src/public-api';
-import { RsPaginationModule } from '@cell4rom/front-line';
-
-
 import { RsChartsC3LibModule } from 'projects/rs-charts-c3-lib/src/public_api';
-import { RSPaginationModule } from '@cell4rom/rs-pagination';
-// import { RsChartsC3LibModule } from '@cell4rom/charts-c3-lib';
+
+import { RsPaginationModule } from '@cell4rom/front-line';
+// import { RsPaginationModule } from 'projects/rs-pagination-lib/src/lib/rs-pagination-lib.module';
 
 export const ROUTES : Routes = [
 
@@ -36,8 +33,7 @@ export const ROUTES : Routes = [
      // { enableTracing: true },
     ),
     HttpClientModule,
-    //RsPaginationModule,
-    RSPaginationModule,
+    RsPaginationModule,
     RsChartsC3LibModule
   ],
   providers: [],
